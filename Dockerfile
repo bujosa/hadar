@@ -1,4 +1,6 @@
-FROM golang:1.21.3-alpine
+# Author: David Bujosa
+# https://hub.docker.com/layers/library/golang/1.21.3-alpine
+FROM golang:1.21.3-alpine 
 
 WORKDIR /app
 
