@@ -1,0 +1,17 @@
+# Ignore Go build artifacts
+*.o
+*.a
+*_test.go
+
+# Ignore Git history
+.git
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore vendor directory
+vendor/
+
+# Ignore binary files
+*.exe
