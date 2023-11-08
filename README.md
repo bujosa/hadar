@@ -23,3 +23,18 @@ docker run --name redis -p 6379:6379 -d redis
 ```
 go run main.go
 ```
+
+## Documentation
+
+I use a [free api](https://cat-fact.herokuapp.com/) for testing the flow of the application.
+
+### Get all cat facts
+```bash
+curl --location --request GET 'http://localhost:8080/facts'
+```
+
+### Check if redis is up
+```bash
+curl --location --request GET 'http://localhost:8080/health'
+```
+
