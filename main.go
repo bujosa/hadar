@@ -38,7 +38,7 @@ func main() {
 		fmt.Fprintf(w, "Redis Facts Response: %s", val)
 	})
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
 		pong, err := client.Ping().Result()
 		if err != nil {
 			http.Error(w, "Failed to connect to Redis", http.StatusInternalServerError)
