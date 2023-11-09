@@ -1,5 +1,5 @@
 # hadar
-This is a simple application in go using redis.
+This is a simple application in go using redis for caching request.
 
 ## How to run
 
